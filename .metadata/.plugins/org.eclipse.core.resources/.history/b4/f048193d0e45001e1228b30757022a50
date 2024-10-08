@@ -1,0 +1,11 @@
+
+public class Superclass {
+	
+	int x1 = 10;
+	
+	public void test()
+	{
+		System.out.println("this is test method of super class");
+	}
+
+}

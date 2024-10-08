@@ -1,0 +1,14 @@
+
+public class Subclass  extends Superclass{
+	
+	
+	int x1 = 10;
+	
+	
+	public void display()
+	{
+		System.out.println("this is display method of the subclass guys");
+	}
+	
+
+}

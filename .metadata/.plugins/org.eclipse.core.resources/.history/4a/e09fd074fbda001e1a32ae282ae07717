@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package JavaOtherStuffs;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class WrapperCLasses {
+
+	public static void main(String[] args) {
+		int x1=10;
+		double y1=22.13;
+		
+		Integer z = x1; // autoboxing 
+		Double x = y1;
+		
+		System.out.println(z);
+		System.out.println(x);
+
+	}
+
+}

@@ -1,0 +1,154 @@
+the concepts which were learned are : 1/4/24
+
+tight coupling 
+loose coupling 
+java interfaces
+Spring containers
+Application context
+basic annaotioans
+@Bean 
+@configuration
+autowiring 
+java bean vs Spring Bean.
+@Primary
+@Qualifer
+
+------------------------------------------------------------
+
+2/4/12
+@component --------->> it has to be annaoted with compeonent 
+@componentScan ---------->>> it has to be annoted for main class and post it will check 
+which ever class has been annoted with @ component it will create the object of that class.//
+Dependecy injection types ::
+constructor injector
+setter injection
+dependency injection
+
+1.Field injection : once u got @Autowired it will create the field level injection //
+// @Component -->> to create the beans // -->> it will create beans automatics.
+
+2.Setter and geetter injection ::
+3.Constructor injection // --> autowired is not mandaotry, these is recommned //
+
+
+
+@Component : instance of class will bemanaged by spring framwork //
+// @configuration : used to launch the spring context //
+
+--------------------------------------------------------------
+3/4/24
+@Component
+Dependency
+@ComponentScan -->> you can specify the package if required 
+dependecy injection ::: identifying the beans , and thier dependcies and wire them together //
+ioc : inversion of control
+spring beans : an object managed by spring framwork 
+application context : only will be used //
+
+autowiring : // process of wiring in dpenedcies for spring .
+
+example :
+
+Game Runner --->>> Gaming cosnole --->>mario
+                                       supercontra
+                                       packman
+
+@Component 
+
+1.can be used on any java classes.
+2.Easy to use
+3.Autowiring : constructor injection, setter injection.
+4. Spring class will create componenet scan and it will identify which are and all are have compenent annotion
+and depencdies ensure the bean is created.
+5. for own application code.
+
+ @Bean
+ 
+ 1.Typically used on methods in spring configuration classes.
+ 2.Need to write code.
+ 3. method call or paramters.
+ 4. we will write the bean creation.
+ 5. custom business logic .
+ 
+ build one sample project
+ --------------------------------------------------------------
+ 4/4/24
+ 
+ eager : default intization of spring beans .
+ lazy intialzation :
+ protype and singleton
+ post constrct and preconstuct:
+ 
+ --------------------------------------------------------------
+ 11/2/24
+ 
+ CDI annaotiaons: replacment for spring annoations :
+ you can use differnet names : @named : compoennt
+ @Inject : autowired
+ 
+ //xml configurations ://
+ 
+ ----------------------------------------------------
+ spring annaotions :
+ 1.@Configuration : indicates that a class declares one or more @Bean methods
+  and may be processed by the spring container to genarte bean definations.
+ 2.@componenetscan : define specfic packages to scan for compoennts 
+ if specfic packages are not defined , scanning will occur from package of class
+ that declares this annaotion.
+ 3.@Bean : imdicates that method produces bean that to be managed by spring container.
+ @Component: indictaed that an annaoted class is a "component";
+ @Service: specilazation of @component inidcating that an annotated class has business logic.
+ @controller:specilazation of @component inidcating that an annotated class is controller (eg web cotroller)
+ @repoitry :specilazation of @component inidcating that an annotated class is used to retrive pr mainpuate the data base
+ 
+ 
+ @Primary : indicates that bean should be given prefernce when mutiple candited are qualified
+ to autowire single valued dependecy.
+ @Quailfer : used an field or paramter as a qualifer for candidite beans when autowiring.
+ @lazy : inidcates bean has been lazily initlazed, absence of @lazy annaotion will lead
+ to @Eager intilazation.
+ 
+ @Scope(value=
+ COnfgirableBeanfactpry.scope_protype)-->> defines a bean to be protope - a new instance will be created 
+ everytime you refer to the bean.
+ Default scope is singeltoiom -> one instance per ioc container.
+ 
+ 
+ @Postconstruct: indientifes the method that will be excetued after dependcy injection is to 
+ perform any intialzation.
+ 
+ @PreDestroy : used to release resources that has been holding.
+ 
+ CDI : context dependency Injection :
+ @Nmed : Jakrata contetxt and Depency injection annaotion similar to component.
+ @inject: similar to autowire.
+ 
+ ----------------------------------------------------------------------------------
+ dpendency injection :
+ indentify beans and thir deoendeces and wire them together.(provides ioc )
+ there are 3 types of depency injection:
+ 1.construcotr injection. -> dpendcies are set by creating the bean using its constructor
+ 
+ 2.Setter injection. depednices are set by calling setter methods on your beans
+ 
+ 3.Field injection.
+ 
+ ioc conatiner : spring ioc conatiner context that manages the spring beans and thier life cycle.
+ 
+ 2 types of ioc:
+ 
+ 1.Bean facotry: basic spring ioc conatiner.
+ 
+ 2.Application context : Advnced spring ioc conatiner wth enterpirse specififc features --
+ easy to use in web applications with internzation features 
+ 
+ 
+ Sroing beans --> object manged by spring:
+ 
+ Autwiring : process of wiring in depednices for a spring bean.
+ 
+ --------------------------------------------------------------------
+ 
+
+
+

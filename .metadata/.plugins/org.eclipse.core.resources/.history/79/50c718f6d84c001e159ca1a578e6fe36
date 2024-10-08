@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class VehicleManger {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Car c = new Car(2, "AUDI", "2020");
+       Motorcycle mr = new Motorcycle(7, "HIMALAYAN", "2023");
+       
+       c.calculateRentalCost(10);
+       System.out.println("the total rent of car is"+ c.toString());
+       mr.calculateRentalCost(7);
+       System.out.println("the total rent of car is"+mr.toString());
+	}
+
+}

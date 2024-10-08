@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Mainclass {
+	
+	
+	
+	public static void main (String [] args)
+	{
+		
+	
+	Staticexamples s = new Staticexamples();
+	s.deposit(5000);
+	  s.showAccount();
+	  
+
+	  
+	}
+}

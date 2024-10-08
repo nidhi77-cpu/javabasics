@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package JavaOtherStuffs;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Serlaization {
+
+	String name;
+	int id;
+	
+	public  Serlaization(String name , int id) {
+		this.name = name;
+		this.id = id;
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		Serlaization sc = new Serlaization("nidhi", 2);
+		
+
+	}
+
+}

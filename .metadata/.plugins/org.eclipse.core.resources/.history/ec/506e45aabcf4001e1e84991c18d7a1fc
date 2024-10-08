@@ -1,0 +1,82 @@
+the concepts which were learned are : 1/4/24
+
+tight coupling 
+loose coupling 
+java interfaces
+Spring containers
+Application context
+basic annaotioans
+@Bean 
+@configuration
+autowiring 
+java bean vs Spring Bean.
+@Primary
+@Qualifer
+
+------------------------------------------------------------
+
+2/4/12
+@component --------->> it has to be annaoted with compeonent 
+@componentScan ---------->>> it has to be annoted for main class and post it will check 
+which ever class has been annoted with @ component it will create the object of that class.//
+Dependecy injection types ::
+constructor injector
+setter injection
+dependency injection
+
+1.Field injection : once u got @Autowired it will create the field level injection //
+// @Component -->> to create the beans // -->> it will create beans automatics.
+
+2.Setter and geetter injection ::
+3.Constructor injection // --> autowired is not mandaotry, these is recommned //
+
+
+
+@Component : instance of class will bemanaged by spring framwork //
+// @configuration : used to launch the spring context //
+
+--------------------------------------------------------------
+3/4/24
+@Component
+Dependency
+@ComponentScan -->> you can specify the package if required 
+dependecy injection ::: identifying the beans , and thier dependcies and wire them together //
+ioc : inversion of control
+spring beans : an object managed by spring framwork 
+application context : only will be used //
+
+autowiring : // process of wiring in dpenedcies for spring .
+
+example :
+
+Game Runner --->>> Gaming cosnole --->>mario
+                                       supercontra
+                                       packman
+
+@Component 
+
+1.can be used on any java classes.
+2.Easy to use
+3.Autowiring : constructor injection, setter injection.
+4. Spring class will create componenet scan and it will identify which are and all are have compenent annotion
+and depencdies ensure the bean is created.
+5. for own application code.
+
+ @Bean
+ 
+ 1.Typically used on methods in spring configuration classes.
+ 2.Need to write code.
+ 3. method call or paramters.
+ 4. we will write the bean creation.
+ 5. custom business logic .
+ 
+ build one sample project
+ --------------------------------------------------------------
+ 4/4/24
+ 
+ eager : default intization of spring beans .
+ 
+ 
+
+
+

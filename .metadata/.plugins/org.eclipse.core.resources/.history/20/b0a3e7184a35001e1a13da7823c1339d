@@ -1,0 +1,19 @@
+
+public class LengthofString {
+	
+	
+	
+	// how to compute the length of string without using built in functions: //
+	
+	
+	
+	
+	public static void main(String [] args)
+	{
+		String s1 = "hello";
+		
+		
+	 
+	}
+
+}

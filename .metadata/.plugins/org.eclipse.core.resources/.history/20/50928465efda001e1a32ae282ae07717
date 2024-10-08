@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package JavaOtherStuffs;
+import java.io.*;
+/**
+ * @author srinidhi.k
+ *
+ */
+public class FIleHandling {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      File f1 = new File("E:\\\\OneDrive - Yethi consulting Pvt Ltd\\\\\\\\Documents");
+       if(f1.exists()) {
+    	   f1.mkdir();
+       }
+	}
+
+}

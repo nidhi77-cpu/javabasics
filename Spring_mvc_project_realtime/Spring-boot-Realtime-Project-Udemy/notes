@@ -1,0 +1,70 @@
+1. starting with the hello world :
+next we have added the jsp man
+now we are added with respect to spring  mvc viw : 
+issue is coming in jsp page check once: 404 error is comimg:
+
+
+20-04-24:
+
+
+-----------------------------------------
+22-04-24
+
+1. web reqiest to send to browser , it handles woth respect to https method and 
+sends back the rewponse :
+query parameters//
+model //
+epression lamh=guage/ in jsp {$name}
+${name} }  -->. these is expression language //
+
+mod 1 controller
+mod 2 controoler
+front controoler:
+
+
+//spring view controoler --> dispatc servelt:
+
+recives http request
+
+process http request:
+
+indentifes the correct controoler , based on request urls
+
+execyutes controller method --> retuens model and view name.
+
+identfes the correct view -->> usinfg view reolver
+
+return http response:
+
+------------------------------------------------------------------
+24-4-24:
+
+Detials of login page -->> welcome page.
+
+authentication logic //
+
+---------------------------------------------------------------------
+
+Requests/models/Session/
+
+login ---->>> we will get username and password -->>
+post in second page they added the hyperlink --- which calls the todos.
+
+to keep the values longer we go for "Session";
+
+differnce between request and session:
+
+1.request scope : active for single request:
+2. session scope :stored across mutiple requests:
+
+
+
+
+---------------------------------------------------------------------
+validations in spring boot:
+1.spring boot starter validations
+2.command bean
+3.Add validations to bean.
+4.Disply validations error in the view.
+
+-----------------------------------------------ended for now.

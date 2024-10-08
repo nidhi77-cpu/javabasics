@@ -1,0 +1,66 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+
+import java.util.*;
+	
+public class StarPattern {
+	public static void main(String[] args) {
+		/*
+		 * // to do the calculation // Scanner sc = new Scanner (System.in); int a =
+		 * sc.nextInt(); int b = sc.nextInt();
+		 * 
+		 * int n=1;
+		 * 
+		 * switch(n) { case 1 : System.out.println(a+b); break; case 2 :
+		 * System.out.println(a-b); break; case 3 : System.out.println(a*b); break; case
+		 * 4 : System.out.println(a/b); break; case 5 : System.out.println(a%b); break;
+		 * default : System.out.println("comedy nothing is working"); break;
+		 * 
+		 * }
+		 */
+		/*
+		 * // to calclate some othe rproblem //
+		 * 
+		 * 
+		 * Scanner sc = new Scanner (System.in); int number = sc.nextInt();
+		 * 
+		 * 
+		 * 
+		 * switch(number) { case 1 : System.out.println("Jan"); break; case 2 :
+		 * System.out.println("Feb"); break; case 3 : System.out.println("mar"); break;
+		 * case 4 : System.out.println("april"); break; case 5 :
+		 * System.out.println("may"); break; default :
+		 * System.out.println("comedy nothing is working"); break;
+		 * 
+		 * 
+		 * 
+		 * }
+		 */
+		// nested loops //
+		
+	   int n =4;
+		
+		/*
+		 * for(int i=1; i<=n ; i++) { for( int j =1; j<=n ; j++) { if(i==1|| i==n ||
+		 * j==1 ||j==n) { System.out.print("*"); } else { System.out.print(" "); } }
+		 * System.out.println(); }
+		 */
+	   
+	   
+	   for(int i=n ; i>=1 ;i--)
+	   {
+		   for(int j=1; j<=i ; j++)
+		   {
+			  System.out.print("*");
+		   }
+		   
+	   }
+	}
+
+}

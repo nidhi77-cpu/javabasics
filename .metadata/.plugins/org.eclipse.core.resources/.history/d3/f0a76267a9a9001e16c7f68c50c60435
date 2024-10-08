@@ -1,0 +1,7 @@
+
+
+public class Snippet {
+	//input for 2 d arrays //
+		
+		int c[] [] = new int[2] [3];
+}

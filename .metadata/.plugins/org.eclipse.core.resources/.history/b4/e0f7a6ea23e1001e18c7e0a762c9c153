@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+package java_oops_projecy_library;
+import java.util.*;
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Member {
+	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getMemberID() {
+		return memberID;
+	}
+	public void setMemberID(int memberID) {
+		this.memberID = memberID;
+	}
+	public List<Book> getBorrowedbooks() {
+		return borrowedbooks;
+	}
+	public void setBorrowedbooks(List<Book> borrowedbooks) {
+		this.borrowedbooks = borrowedbooks;
+	}
+	private String name;
+	public Member(String name, int memberID, List<Book> borrowedbooks) {
+		super();
+		this.name = name;
+		this.memberID = memberID;
+		this.borrowedbooks = borrowedbooks;
+	}
+	private int memberID;
+	private List<Book> borrowedbooks;
+	
+	
+	
+	public void displayAvailableBooks(Book book) {
+	    // Display the list of available books
+		List<Book> books = new ArrayList<>();
+		books.add(book);
+		System.out.println("displaying the avaibaele books" + books);
+	}
+
+	public void displayBorrowedBooks(Member member , Book book) {
+	    // Display the list of books borrowed by a member
+       member.getBorrowedbooks().add(book);
+       
+	}
+	
+	public void addMembers(Member member, List<Book> book) {
+		
+		//logic to add members //
+		Member member1 = new Member("nahusha", 12, book);
+		
+	}
+
+}

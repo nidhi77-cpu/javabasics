@@ -1,0 +1,296 @@
+import java.util.*;
+import java.util.stream.Collectors;
+
+import javax.swing.text.Utilities;
+
+public class LeetcodeproblemsString {
+
+	public static void main(String[] args) {
+		/*
+		 * String[] sent = {"alice and bob love leetcode", "i think so too",
+		 * "this is great thanks very much"}; mostwordfound(sent);
+		 */
+
+		/*
+		 * String s = "chopper is not a tanuki"; int k = 4;
+		 * 
+		 * truncateSentence(s, k);
+		 * 
+		 * 
+		 */
+		/*
+		 * String s = "is2 sentence4 This1 a3";
+		 * 
+		 * sortsentence(s);
+		 */
+		/*
+		 * String word = "rzwuktxcjfpamlonbgyieqdvhs"; Character ch = 's';
+		 * //"shvdqeiygbnolmapfjcxtkuwzr"// : excepted//
+		 * //"rzwuktxcjfpamlonbgyieqdvhs"// : output// reversePrefix(word, ch);
+		 */
+		/*
+		 * String s = "poiinter"; // opiopnter finalstring(s);
+		 */
+		/*
+		 * String[] words = { "abc","bcd","aaaa","cbc" }; Character x = 'a';
+		 * 
+		 * findWordsContaining(words, x);
+		 * 
+		 */
+		/*
+		 * String[] as = { "phone", "blue", "pixel" }; String[] as1 = { "computer",
+		 * "silver", "lenovo" }; String[] as2 = { "phone", "gold", "iphone" };
+		 * 
+		 * List<String [] > items = new ArrayList<>(); items.add(as); items.add(as1);
+		 * items.add(as2);
+		 * 
+		 * String ruleKey = "color"; String ruleValue = "silver";
+		 * 
+		 * countMatches(items ,ruleKey , ruleValue);
+		 */
+
+		/*
+		 * String sentence = "he bought 2 pencils, 3 erasers, and 1  pencil-sharpener.";
+		 * countValidWords(sentence);
+		 */
+		/*
+		 * String s = "ab"; String goal = "ba"; buddyStrings(s, goal);
+		 */
+		/*
+		 * String address = "1.1.1.1"; defangIPaddr(address);
+		 */
+		
+		/*
+		 * String jewels = "aA"; String stones = "aAAbbbb"; numJewelsInStones(jewels ,
+		 * stones);
+		 */
+		String command = "G()(al)";
+		interpret(command);
+
+	}
+
+	private static String interpret(String command) {
+		String split[] = command.split("");
+
+		String newst = "";
+		for (int i = 0; i < split.length; i++) {
+
+		   if(split[i].equals("(")) {
+			   for(int j =0 ; j< split.length; j++) {
+				   
+			   }
+		   }
+		}
+		return newst;
+	}
+
+	private static int numJewelsInStones(String jewels, String stones) {
+
+		String split[] = stones.split("");
+		int count = 0;
+		for (int i = 0; i < split.length; i++) {
+			if (jewels.contains(split[i])) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	private static String defangIPaddr(String address) {
+		
+		String split[] = address.split("");
+		String newst = "";
+		for (int i = 0; i < split.length; i++) {
+			if (split[i].equals(".")) {
+				newst =	newst+split[i].replace(".", "[.]");
+			}
+			else {
+				newst = newst+split[i];
+			}
+		}
+		return newst;
+	}
+
+	private static boolean buddyStrings(String s, String goal) {
+		String split[] = s.split("");
+		String split1[] = goal.split("");
+		//a b // b a//
+		int i = 0;
+		int j = 0;
+		for (i = 0; i < s.length(); i++) {
+
+			for (j = 0; j < goal.length(); j++) {
+
+				if (split[i] != split1[j]) {
+					split1[j] = split[i];
+					split1[i] = split[j];
+				}
+			}
+
+		}
+		if (goal == split[i] + split[j]) {
+			return true;
+		}
+
+		return false;
+
+	}
+
+	private static int countValidWords(String sentence) {
+
+		int count = 0;
+		sentence = sentence.toLowerCase().trim();
+		String split[] = sentence.split(" ");
+		for (int i = 0; i < split.length; i++) {
+			 // Check if the word contains "!", "|", ".", digits, or is an empty string
+		    if (split[i].contains("!") || split[i].contains("|") || split[i].contains(".") ||
+		            split[i].matches(".*\\d.*") || split[i].equals("")) {
+		        continue; // Skip this word if it contains any of the specified characters
+		    }
+		    // Check if there is at most one hyphen and it is surrounded by lowercase characters
+		    if (split[i].contains("-") && (split[i].startsWith("-") || split[i].endsWith("-"))) {
+		        continue; // Skip this word if the hyphen placement is incorrect
+		    }
+			count++;
+		}
+		return count;
+	}
+
+	private static void countMatches(List<String[]> items, String ruleKey, String ruleValue) {
+
+		for (int i = 0; i < items.size(); i++) {
+
+		}
+
+	}
+
+	private static List<Integer> findWordsContaining(String[] words, Character x) {
+		List<Integer> as = new ArrayList<>();
+
+		String s1 = String.valueOf(x);
+
+		for (int i = 0; i < words.length; i++) {
+			if (words[i].contains(s1)) {
+				as.add(i);
+			}
+		}
+
+		return as;
+	}
+
+	private static String finalstring(String s) {
+
+		/*
+		 * int j =0; int k =0; for (int i = 0; i < s.length() ; i++) {
+		 * if(s.charAt(i)=='i') { j=i;
+		 * 
+		 * for(k=j-1 ; k>=0 ; k--) {
+		 * 
+		 * latest= latest+s.charAt(k);
+		 * 
+		 * } s=s.replace(s.substring(0,j), latest); }
+		 * 
+		 * 
+		 * 
+		 * 
+		 * } latest = latest+s.substring(j+1, s.length()); return latest.trim();
+		 */
+		/*
+		 * String s = "poiinter"; //opiopnter
+		 */
+
+		// String latest = "";
+
+		/*
+		 * int j = 0; int k = 0; StringBuilder sb ; for (int i = 0; i < s.length(); i++)
+		 * { if (s.charAt(i) == 'i') { new StringBuilder(); continue;
+		 * 
+		 * }
+		 * 
+		 * }
+		 */
+		String latest = "";
+		String split[] = s.split("i");
+		StringBuilder sb = null;
+
+		for (int i = 0; i < split.length; i++) {
+			sb = new StringBuilder(split[i]).reverse();
+		}
+
+		/// latest = latest + s.substring(j + 1, s.length());
+		return latest + sb;
+
+	}
+
+	private static String reversePrefix(String word, Character ch) {
+		/*
+		 * String s = String.valueOf(ch); String num = String.valueOf(ch);
+		 */
+		String latest = "";
+		int j = 0;
+		for (int i = 0; i < word.length(); i++) {
+
+			if (word.charAt(i) == ch) {
+				j = i;
+				break;
+			}
+
+		}
+
+		for (int i = j; i >= 0; i--) {
+			latest = latest + word.charAt(i);
+		}
+
+		latest = latest + word.substring(j + 1, word.length());
+		return latest.trim();
+
+	}
+
+	private static String sortsentence(String s) {
+
+		String latest = "";
+		String split[] = s.split(" ");
+		HashMap<String, String> map = new HashMap<>();
+		for (String s1 : split) {
+			String num = s1.substring(s1.length() - 1);
+			s1 = s1.substring(0, s1.length() - 1);
+
+			map.put(num, s1);
+
+		}
+
+		for (Map.Entry<String, String> m : map.entrySet()) {
+			latest = latest + m.getValue() + " ";
+		}
+		return latest.trim();
+	}
+
+	private static String truncateSentence(String s, int k) {
+		// HashMap<Integer, String> map = new HashMap<>();
+		String split[] = s.split(" ");
+		String latest = "";
+		for (int i = 0; i < k; i++) {
+			latest = latest + split[i] + " ";
+		}
+		return latest;
+	}
+
+	private static Integer mostwordfound(String[] sent) {
+
+		int countLength = 0;
+		ArrayList<Integer> as = new ArrayList<>();
+
+		for (String s : sent) {
+
+			String split[] = s.split(" ");
+			countLength = split.length;
+			as.add(countLength);
+		}
+
+		Integer ass = Collections.max(as);
+
+		return ass;
+
+	}
+
+}

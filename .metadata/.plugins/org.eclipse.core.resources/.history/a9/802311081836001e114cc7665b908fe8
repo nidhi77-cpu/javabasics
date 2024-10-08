@@ -1,0 +1,20 @@
+
+public class Reverse {
+
+	
+	
+	// reverse the given string :
+	
+	public static void main(String [] args)
+	{
+	String a = "nidhii";
+	String b ="";
+	int length = Integer.parseInt(a);
+	for(int i = a.length() ; i>0 ; i--)
+	{
+		b =  b+a.charAt(i);
+	}
+	
+	System.out.println("the reversed string is "+ b);
+}
+}

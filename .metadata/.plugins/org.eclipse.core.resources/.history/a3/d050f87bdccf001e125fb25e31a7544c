@@ -1,0 +1,16 @@
+
+public class LeetCOdeProblemsonArrays {
+
+	public static void main(String[] args) {
+		int [] nums = {1,2,1};
+		getConcatenation(nums);
+
+	}
+
+	private static void getConcatenation(int[] nums) {
+	 int [] ans = new int[nums.length];
+	 
+		
+	}
+
+}

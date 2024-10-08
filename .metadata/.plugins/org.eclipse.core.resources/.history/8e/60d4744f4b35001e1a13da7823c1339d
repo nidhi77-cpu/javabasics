@@ -1,0 +1,33 @@
+
+
+import java.util.Scanner;
+public class LengthofString {
+	
+	
+	
+	// how to compute the length of string without using built in functions: //
+	
+	
+	
+	
+	public static void main(String [] args)
+	{
+		
+		
+		
+	    Scanner sc = new Scanner(System.in);
+	    String s = sc.nextLine();
+	    int i=0;
+	    char[]  arr = s.toCharArray();
+	    
+	    for(char c : arr)
+	    {
+	    	i++;
+	    }
+	    
+	    System.out.println(i);
+	    
+	    System.out.println("The length of the array is "+ i);
+	}
+
+}

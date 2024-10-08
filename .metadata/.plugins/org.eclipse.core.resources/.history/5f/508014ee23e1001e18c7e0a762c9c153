@@ -1,0 +1,74 @@
+/**
+ * 
+ */
+package java_oops_projecy_library;
+
+import java.util.*;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Library {
+
+	public List<Book> getAvailableBooks() {
+		return availableBooks;
+	}
+
+	public void setAvailableBooks(List<Book> availableBooks) {
+		this.availableBooks = availableBooks;
+	}
+
+	public List<Member> getMembers() {
+		return members;
+	}
+
+	public void setMembers(List<Member> members) {
+		this.members = members;
+	}
+
+	public Library(List<Book> availableBooks, List<Member> members) {
+		super();
+		this.availableBooks = availableBooks;
+		this.members = members;
+	}
+
+	private List<Book> availableBooks;
+	private List<Member> members;
+
+	public void addBook(Book book) {
+
+		// Logic to add a book to the available books list Book newbooks
+		this.availableBooks.add(book);
+
+	}
+
+	public void issueBook(Member member, Book book) {
+		// Logic to check availability and issue a book to a member
+		/*
+		 * if (this.availableBooks.size() > 1) { member.displayAvailableBooks(book);
+		 * 
+		 * } // writing the logic to issue book // else {
+		 * member.displayAvailableBooks(book);
+		 * 
+		 * }
+		 */
+		 if(this.availableBooks.get(member.getMemberID())!=null) {
+			 member.displayAvailableBooks(book);
+			 System.out.println("the book has bben issued to member");
+		 }
+		
+        
+        
+
+	}
+
+	public void returnBook(int returnerId, String isbnToReturn) {
+		// Logic to process the return of a book and update records
+		this.getAvailableBooks().get(returnerId);
+		this.availableBooks.get(returnerId).getIsbn();
+		this.availableBooks.remove(returnerId);
+		this.getAvailableBooks();
+		System.out.println("the book has been returned and it is been deleted"+ getAvailableBooks());
+	}
+}

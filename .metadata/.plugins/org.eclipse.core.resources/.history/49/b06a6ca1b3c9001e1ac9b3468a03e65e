@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class LeetcodeproblemsString {
+
+	public static void main(String[] args) {
+		String[] sent = { "please wait", "continue to fight", "continue to win" };
+		mostwordfound(sent);
+	}
+
+	private static void mostwordfound(String[] sent) {
+
+		int count = 0;
+		ArrayList<Integer> as = new ArrayList<>();
+
+		for (String s : sent) {
+
+			/*
+			 * for (int i = 0; i < sent.length; i++) { String split1[] = sent[i].split(" ");
+			 * 
+			 * }
+			 */
+			
+			String split[] = s.split(" ");
+
+		}
+		/*
+		 * for (int i = 0; i < sent.length; i++) {
+		 * 
+		 * String[] split = sent[i].split(" "); for (int j = 0; j < split.length; j++) {
+		 * 
+		 * as.add(count++); } count = 0;
+		 * 
+		 * }
+		 * 
+		 * for (Integer test : as) { System.out.println(test); }
+		 */
+	}
+
+}

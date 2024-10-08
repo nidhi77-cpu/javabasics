@@ -1,0 +1,56 @@
+/**
+ * 
+ */
+import java.util.*;
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Loopproblems {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//
+		/*
+		 * int n = 10; // printing for the even number // for(int i=1; i<=n ; i++) {
+		 * if(i%2==0) { System.out.println(i); } }
+		 */
+	//
+	// 1 or 0  //
+		
+	Scanner sc = new Scanner(System.in);
+	int a = sc.nextInt();
+	
+	int marks = sc.nextInt();
+	
+	if(a==0)
+	{
+		break;
+	}
+ 
+     do 
+     {
+    	
+    	if(marks>=90)
+    		{
+    			System.out.println(" this is good");
+    		}
+    	else if(marks>=70 )
+    	{
+    		System.out.println(" this is good as well");
+    	}
+    	else if(marks>=60 )
+    	{
+    		System.out.println(" this is good as well");
+    	}
+    	
+     }while(marks<=100);
+		
+		// do - while loop //
+		
+	}
+
+}

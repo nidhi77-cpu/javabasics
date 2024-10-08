@@ -1,0 +1,37 @@
+Important notes on spring boot :
+
+spring intilazer
+spring boot starter projects
+spring boot auto configurations
+spring boot devtools
+
+------------------------------------------------
+
+logging
+profiles, confgiuration properties : profiles
+
+spring boot actuautor : memeory stuffs:
+
+--------------------------------------------------
+
+spring boot starters: 
+these are the convient dependency descrptiors for different features:
+
+spring boot auto configuration : ex : whilte label error automatic:
+example : spring starter web :
+
+spring boot dev tools: 
+basically no need to restart the server 
+
+--------------------------------------------------
+
+profiles ::
+
+dev , qa , stage , prod ----etc:
+
+profiles : enables to envt configuration:
+
+
+
+
+

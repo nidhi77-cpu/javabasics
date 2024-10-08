@@ -1,0 +1,13 @@
+//Important topics ://
+
+FUnctionalInterface : which contains only one interface.
+
+predicate : boolean valued function
+
+consumer : it taken input but return nothing //
+
+functions : which does some tasks
+
+supplier : it will just supply the required objects and it will not take any input.
+
+

@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Constructors {
+	
+	String name ;
+	int id;
+	
+
+	public Constructors(String name , int id) {
+		this.name = name;
+		this.id = id;
+		System.out.println(name);
+		System.out.println(id);
+	}
+	
+	
+	public Constructors(String name)
+	{
+		
+	}
+	
+	public Constructors()
+	{
+		
+	}
+	
+	public Constructors(double a)
+	{
+		
+	}
+
+}

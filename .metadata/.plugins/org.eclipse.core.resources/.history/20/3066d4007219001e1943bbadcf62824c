@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class StringProgram {
+	
+	
+	public static int maxchar(String s1)
+	{
+	
+		HashMap<Character , Integer> charcountMap = new HashMap<>();
+		char[] characterarrays = s1.replaceAll("\\s", "").toCharArray();
+		int count=0 ;
+		for(char c : characterarrays)
+		{
+			if(charcountMap.containsKey(c))
+			{
+				charcountMap.put(c, charcountMap.get(c)+1);
+			}
+			else
+			{
+				charcountMap.put(c, 1);
+			}
+		}
+		
+		for(Map.Entry<Character, Integer> maps : charcountMap.entrySet())
+		{
+		count=maps.getValue();
+		char cs=maps.getKey();
+			System.out.println(count);
+			System.out.println(cs);
+		}
+		return count;
+	}
+	
+	public static void main(String[] args)
+	{
+		/*String s1 = "Java";
+	    String s= "";*/
+	    maxchar("NIDHII");
+	   
+	}
+
+}

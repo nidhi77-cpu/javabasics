@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class StringCoding {
+
+	public static int lengthOfLastWord(String s) {
+		
+		String[] a = s.split(" ");
+		s=  a[a.length-1];
+		int size = s.length();
+		return size;
+
+	}
+	
+	 public static void main(String[] args) {
+		//lengthOfLastWord("Hello World");
+		 longestCommonPrefix(["flower","flow","flight"]) ;
+	}
+
+	private static void longestCommonPrefix(String[] strs) {
+		
+		
+	}
+
+}

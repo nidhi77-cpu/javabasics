@@ -1,0 +1,31 @@
+package secondminiproject;
+
+public class Showroom  implements Utility	{
+	
+	public String showroomname;
+	public String showroomaddress;
+	public String managername;
+	public int totalemployees;
+	public int totalnocarsinstock;
+	
+	
+	
+	
+	
+	
+	
+	
+
+	@Override
+	public void getdetails() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setdeatils() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

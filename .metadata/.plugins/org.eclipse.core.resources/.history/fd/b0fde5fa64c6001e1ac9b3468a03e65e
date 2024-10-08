@@ -1,0 +1,64 @@
+
+/**
+ * 
+ */
+import java.util.*;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class ReverseString {
+
+	static String reverseStringWordWise(String input) {
+		String[] arr = input.split(" ");
+		String late = "";
+
+		// base case level //
+		if (arr.length == 1) {
+			return input;
+		}
+
+		for (int i = arr.length - 1; i >= 0; i--) {
+			late = late + arr[i] + " ";
+		}
+
+		return late;
+
+	}
+
+	public static void main(String[] args) {
+		/*
+		 * String s = "nidhi"; String s1 = "";
+		 * 
+		 * for(int i=s.length()-1; i>=0 ;i--) { s1 = s1+s.charAt(i); }
+		 * System.out.println(s1);
+		 */
+		Scanner sc = new Scanner(System.in);
+		String input = sc.nextLine();
+		// String ans = reverseStringWordWise(input);
+		String ans = reverseStringWord(input);
+		System.out.println(ans);
+	}
+
+	private static String reverseStringWord(String input) {
+		String[] arr = input.split(" ");
+		String late1 = "";
+		// base case level //
+		if (arr.length == 1) {
+			return input;
+		}
+
+		/*
+		 * for (int i = arr.length - 1; i >= 0; i--) { late1 = late1 + arr[i] + " "; }
+		 */
+
+		for (int i = 0; i < arr.length ; i++) {
+          
+		}
+
+		return late1;
+
+	}
+
+}

@@ -1,0 +1,19 @@
+
+public class Staticexamples {
+	
+	
+	 int a1 = 10;
+	
+	public static void main(String [] args)
+	{
+		
+		try {
+			Staticexamples sc = new Staticexamples();
+			System.out.println(sc.a1);
+			System.out.println(sc);
+		} catch (Exception e) {
+			
+		}
+	}
+
+}

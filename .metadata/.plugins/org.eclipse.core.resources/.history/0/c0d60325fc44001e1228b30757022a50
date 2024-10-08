@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Constructors {
+	
+	String name ;
+	int id;
+	
+
+	public Constructors() {
+		System.out.println("this is sample construcot");
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package JavaOtherStuffs;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class GarbageCollector {
+
+	public static void main(String[] args) {
+
+	}
+
+}

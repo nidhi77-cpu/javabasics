@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package secondminiproject;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public interface Utility {
+
+}

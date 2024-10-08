@@ -1,0 +1,9 @@
+
+public class Library {
+	
+	
+	
+	static Sample s = new Sample("nidhi", 12, 27);
+	
+
+}

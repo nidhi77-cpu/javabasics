@@ -1,0 +1,33 @@
+
+public class Staticexamples {
+	
+	
+	int actno=12345;
+	String name = "Dinga";
+	String branch = "basvangudi";
+	double balance = 5000;
+ 	String type = "Savings";
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String [] args)
+	{
+		
+	//	try {
+		/*	Staticexamples sc = new Staticexamples();
+			System.out.println(sc.a1);
+			System.out.println(sc); // refernce varibles gives the address of the object :
+			
+			Staticexamples sc1 = sc;
+		} catch (Exception e) {
+			
+		}
+	}
+*/
+			|
+}

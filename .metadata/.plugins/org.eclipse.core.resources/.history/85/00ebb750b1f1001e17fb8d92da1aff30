@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.udemyspring.SpringbootprojectUdemy.exercise;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class BusinessClassService {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,81 @@
+Important notes on spring boot :
+
+spring intilazer
+spring boot starter projects
+spring boot auto configurations
+spring boot devtools
+
+------------------------------------------------
+
+logging
+profiles, confgiuration properties : profiles
+
+spring boot actuautor : memeory stuffs:
+
+--------------------------------------------------
+
+spring boot starters: 
+these are the convient dependency descrptiors for different features:
+
+spring boot auto configuration : ex : whilte label error automatic:
+example : spring starter web :
+
+spring boot dev tools: 
+basically no need to restart the server 
+
+--------------------------------------------------
+
+profiles ::
+
+dev , qa , stage , prod ----etc:
+
+profiles : enables to envt configuration:
+
+trace
+debug
+info
+warning
+error
+off
+---------------------------------------------
+12/4/24
+
+proflies:
+configration properties : u can create these as class and give that as varibles 
+intilazes that in appcation propties :
+
+jar file : for production to use no need to war file :
+
+
+
+
+Spring framwork :
+dpendnecy injection :
+@xomponent , !Autowired , @COmponentscan etc ---
+just dpency injection is not suffienct we need other framwroks to build the
+apps.
+Spring module and Spring Projects :
+
+Spring mvc :(Spring module)
+simplify building web apps and rest apis
+@controller , @restcontroller , @request mapping.
+
+Spring boot : spring project 
+build production ready apps quickly 
+
+started projects
+auto confguration
+actuators
+emnbedded server
+logging and error hanling
+profiles and configuration propertiea:
+
+spring boot is wrapper to use sprin mvc and spring :
+
+
+-----------------------------------------------------------------
+
+
+
+
+

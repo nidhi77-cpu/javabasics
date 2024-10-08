@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package JavaOtherStuffs;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Serlaization {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+
+	}
+
+}

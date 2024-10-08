@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public  abstract class Vehicle {
+	private int make;
+	private String model;
+	private String year ;
+
+}

@@ -1,0 +1,89 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.stream.IntStream;
+
+public class Collections {
+	
+	
+	
+	
+	public static void main(String[] args)
+	{
+		/*
+		 * ArrayList<String> ar = new ArrayList<String>(5);
+		 * 
+		 * System.out.println(ar.stream());
+		 */
+		ArrayList<String> ar = new ArrayList<>();
+		
+		ar.add("nidhi");
+		ar.add("amma");
+		ar.add("appa");
+		ar.add("hari");
+		
+		ar.stream().forEach(System.out::println);
+		
+		System.out.println("the end of arraylist------------------------->>>");
+		
+		// hashmap will not store duplicates and will not give in ascending order
+		//treemap will sort in ascending order autoatically.
+		
+		Map<String, Integer> map1 = new HashMap<>();
+		
+		map1.put("nidhi", 3);
+		map1.put("aidhi", 3);
+		map1.put("bidhi", 3);
+		map1.put("cidhi", 3);
+		
+		/*
+		 * for(Map.Entry<String, Integer> mss : map1.entrySet()) {
+		 * System.out.println(mss); }
+		 */
+		
+		for(String keys : map1.keySet())
+		{
+			System.out.println(keys);
+		}
+		
+		//using iterators:
+		Iterator<Map.Entry<String, Integer>> it = map1.entrySet().iterator();
+		
+		while(it.hasNext())
+		{
+			Map.Entry<String, Integer> set = it.next();
+			System.out.println("key value is" + set.getKey());
+			
+			
+			System.out.println("value is"+ set.getValue());
+		}
+		
+		// 1st program:
+		
+		ArrayList<String> asr = new ArrayList<>();
+		asr.add("red");
+		asr.add("white");
+		asr.add("black");
+		asr.add("green");
+		asr.add("brown");
+		
+		/* asr.stream().forEach(System.out::println); */
+		Iterator<String> itr = asr.iterator();
+		while(itr.hasNext())
+		{
+			
+			for(String arr : itr.next())
+			{
+				System.out.println(arr);
+			}
+		}
+		
+		
+        
+	}
+	
+
+}

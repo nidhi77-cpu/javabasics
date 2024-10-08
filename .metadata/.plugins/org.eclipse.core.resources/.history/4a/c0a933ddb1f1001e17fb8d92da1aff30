@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package com.udemyspring.SpringbootprojectUdemy.exercise;
+
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+
+  
+
+public class BusinessClassService {
+
+	@Autowired
+	DataService dataService;
+	/**
+	 * @param args
+	 */
+	public int findMax() {
+		 return Arrays.stream(dataService.retrivedata()).max().orElse(0);
+	}
+
+}

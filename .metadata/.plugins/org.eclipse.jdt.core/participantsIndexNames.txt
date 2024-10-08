@@ -1,0 +1,9 @@
+INDEX VERSION 1.132
+E:\java_project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\926078229.index
+\Spring-boot-Realtime-Project-Udemy\src\main\java
+E:\java_project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3817985397.index
+\Spring-boot-Realtime-Project-Udemy\src\main\java
+E:\java_project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3648585808.index
+\jsp-servlet-jdbc-mysql-example\src\main\java
+E:\java_project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2710935455.index
+\Spring-boot-Realtime-Project-Udemy\src\main\java

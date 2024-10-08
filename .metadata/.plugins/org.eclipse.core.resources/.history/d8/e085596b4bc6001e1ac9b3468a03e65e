@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class StringCoding {
+
+	public static int lengthOfLastWord(String s) {
+		
+		String[] a = s.split(" ");
+		 
+		int size = s.length();
+		return size;
+
+	}
+	
+	 public static void main(String[] args) {
+		lengthOfLastWord("Hello World");
+	}
+
+}

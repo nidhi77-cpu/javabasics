@@ -1,0 +1,16 @@
+the concepts which were learned are :
+
+tight coupling 
+loose coupling 
+java interfaces
+Spring containers
+Application context
+basic annaotioans
+@Bean 
+@configuration
+autowiring 
+java bean vs Spring Bean.
+@Primary
+@Qualifer
+
+

@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package JavaOtherStuffs;
+
+import java.util.Properties;
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class PropsFIle {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		// properties is nothing but the has table //
+		Properties p1 = new Properties();
+		
+
+	}
+
+}

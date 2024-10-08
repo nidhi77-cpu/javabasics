@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Mainclass {
+	
+	
+	
+	public static void main (String [] args)
+	{
+		
+	// constructors
+	Staticexamples s = new Staticexamples();
+	Constructors c = new Constructors("nidhi" , 100);
+	
+	s.showbalance();
+	s.deposit(5000);
+	s.showbalance();
+	s.credit(1000);
+	s.showbalance();
+	 s.showAccount();
+	  s.dummy();
+	  System.out.println(s.random);
+      //has a realtion
+	  Email e = new Email("nidhi","java", "codewell");
+	  e.openMail();
+	  e.a1.showDetails();
+	  //has a realtion
+	  
+	  //inhertiane
+	  
+	  
+	}
+}

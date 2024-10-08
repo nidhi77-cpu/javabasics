@@ -1,0 +1,14 @@
+//Important topics ://
+
+FUnctionalInterface : which contains only one interface.
+
+predicate : boolean valued function : test , and , or , negate:
+
+consumer : it taken input but return nothing // : apply : 
+
+functions : which does some tasks : apply , --->> function chaining :: andThen , compose
+
+supplier : it will just supply the required objects and it will not take any input.
+get method
+
+

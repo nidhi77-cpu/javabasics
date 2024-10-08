@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 0 source folders to &apos;Spring-boot-Realtime-Project-Udemy&apos;&#x0D;&#x0A;- Destination element: &apos;Spring-boot-Realtime-Project-Udemy&apos;" description="Copy source folders" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="0" stamp="1713966043619" target="/Spring-boot-Realtime-Project-Udemy" version="1.0"/>
+</session>

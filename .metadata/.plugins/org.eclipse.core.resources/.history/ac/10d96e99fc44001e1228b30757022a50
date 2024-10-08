@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+
+/**
+ * @author srinidhi.k
+ *
+ */
+public class Constructors {
+	
+	String name ;
+	int id;
+	
+
+	public Constructors(String name , int id) {
+		name = name;
+		id = id;
+		System.out.println(name);
+		System.out.println(id);
+	}
+	
+	
+	
+
+}

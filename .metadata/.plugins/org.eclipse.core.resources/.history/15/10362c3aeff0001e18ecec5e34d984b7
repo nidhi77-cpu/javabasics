@@ -1,0 +1,38 @@
+the concepts which were learned are : 1/4/24
+
+tight coupling 
+loose coupling 
+java interfaces
+Spring containers
+Application context
+basic annaotioans
+@Bean 
+@configuration
+autowiring 
+java bean vs Spring Bean.
+@Primary
+@Qualifer
+
+------------------------------------------------------------
+
+2/4/12
+@component --------->> it has to be annaoted with compeonent 
+@componentScan ---------->>> it has to be annoted for main class and post it will check 
+which ever class has been annoted with @ component it will create the object of that class.//
+Dependecy injection types ::
+constructor injector
+setter injection
+dependency injection
+
+1.Field injection : once u got @Autowired it will create the field level injection //
+// @Component -->> to create the beans // -->> it will create beans automatics.
+
+2.Setter and geetter injection ::
+3.Constructor injection // --> autowired is not mandaotry, these is recommned //
+
+
+
+@Component : 
+// @configuration : used to launch the spring context //
+
+

@@ -1,0 +1,30 @@
+import java.util.*;
+public class LeetcodeproblemsString {
+	
+	
+	
+	
+	public  void main (String [] args) {
+		String [] sent = {"please wait", "continue to fight", "continue to win"};
+		mostwordfound(sent);
+	}
+
+	private void mostwordfound(String[] sent) {
+	String s = sent.toString();
+	sent = s.split(",");
+	int count=0;
+	for(int i =0 ; i<sent.length; i++) {
+		//String split[] = sent[i].split(" ");
+		String [] split = sent[i].split(" ");
+		for(int j =0 ; j<split.length; j++) {
+		 count++;
+			
+		}
+		
+		
+		
+	}
+		
+	}
+
+}

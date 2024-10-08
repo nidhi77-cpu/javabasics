@@ -1,0 +1,12 @@
+
+public class LeetcodeproblemsString {
+	
+	
+	
+	
+	public  void main (String [] args) {
+		String [] sent = {"please wait", "continue to fight", "continue to win"};
+		mostwordfound(sent);
+	}
+
+}

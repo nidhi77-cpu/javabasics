@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class LeetCOdeProblemsonArrays {
+
+	public static void main(String[] args) {
+		int[] nums = { 2, 7, 11, 15 };
+		int target = 9;
+		twoSum(nums, target);
+
+		// getConcatenation(nums);
+
+	}
+
+	private static int[] twoSum(int[] nums, int target) {
+     HashMap<Integer, Integer> mp = new HashMap<>();
+		int[] total = null;
+		for (int i = 0; i < nums.length-1; i++) {
+			/*
+			 * target = nums[i] + nums[i + 1]; as.add(i); as.add(i + 1);
+			 */
+			if(nums[i] +nums[i+1]== target) {
+				mp.put(i, i+1);
+			}
+		}
+	    
+		for(Map.Entry<Integer, Integer> m : mp.entrySet()) {
+			total[0] = m.getKey();
+			total[1] = m.getValue();
+		}
+		return total;
+
+	}
+
+	private static int [] getConcatenation(int[] nums) {
+		//ans[i] == nums[i] and ans[i + n] == nums[i]
+        int [] sol = new int [2* nums.length];
+		for (int i = 0; i < nums.length; i++) {
+			sol[i] = nums[i];
+			sol[i+nums.length] = nums[i];
+		}
+		
+       return sol;
+	}
+
+}
