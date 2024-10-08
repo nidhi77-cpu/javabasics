@@ -1,0 +1,116 @@
+package practical;
+
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class pilot {
+
+	public static  void main(String[] args) {
+		List<Integer> numList = new ArrayList<Integer>();
+//		Date d  = new Date(0);
+//	//	System.out.println(d.toLocalDate());
+//		System.out.println(d.toString());
+//		String data_time = "12-03-1999";
+//		SimpleDateFormat sd = new SimpleDateFormat("dd-MM-yyyy");
+		try {
+		//	Date date_selected = sd.parse(data_time);
+		//	System.out.println(date_selected);
+		} catch (Exception e) {
+			System.out.println("could not get the date");
+		}
+		
+		System.out.println(" helooooo");
+		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
+		driver.get("https://www.sakraworldhospital.com/request-appointment.php");
+		driver.manage().window().maximize();
+
+		// driver.findElement(By.xpath("//a[text()='Dr. Rani Premkumar']")).click();
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,250)");
+
+		driver.findElement(By.linkText("Dr. Rani Premkumar")).click();
+		// div[@class='reser-hospital']/descendant::button[text()='Consultation']
+		// driver.findElement(By.xpath("
+		// //div[@class='reser-hospital']/descendant::button[text()='Consultation']")).click();
+
+//	 public void afterlogin() {
+//		// WebDriver driver = new ChromeDriver();
+//		WebElement ele =  driver.findElement(By.linkText("Dr. Rani Premkumar")).click(); 
+//	 }
+		// driver.findElement(By.id("req_name")).sendKeys("ashish");
+		try {
+			Thread.sleep(5);
+		} catch (InterruptedException e) {
+
+			System.out.println("good way");
+		}
+      
+		WebElement ele = driver.findElement(By.id("req_name"));
+		ele.sendKeys("ashsish");
+	//	eleispresent("ashsish");
+		//req_datebirth
+		try {
+			if (ele.isEnabled() && ele.isDisplayed()) {
+				driver.findElement(By.id("req_email")).sendKeys("xyz@gmail.com");
+
+				driver.findElement(By.id("req_mobile")).sendKeys("9449596780");
+				WebElement dropList = driver.findElement(By.id("req_gender"));
+				Select s = new Select(dropList);
+				s.selectByIndex(1);
+				s.selectByVisibleText("Male");
+				driver.findElement(By.id("req_datebirth")).click();
+				Date d  = new Date(0);
+				//	System.out.println(d.toLocalDate());
+					System.out.println(d.toString());
+					String data_time = "12-03-1999";
+					SimpleDateFormat sd = new SimpleDateFormat("dd-MM-yyyy");
+					System.out.println(sd.getCalendar());
+			}
+		} catch (Exception e) {
+		 
+			System.out.println("could not get the email and mobile ");
+		}
+	}
+    
+	
+public static boolean eleispresent(String Locators)
+{
+	WebElement e = null;
+	
+	WebDriver driver = new ChromeDriver();
+	try {
+		e= driver.findElement(By.id(Locators));
+	} catch (Exception e1) {
+
+		return false;
+	}
+	if(e.isDisplayed())
+	{
+		return true;
+	}
+	return false;
+	
+	
+	
+//	if ( ele.contains("ashish"))
+//	{
+//		return true;
+//	}
+//	
+//	return false;
+//	// return true if it is presents
+//	// returns false if it is not present
+	
+	 
+ }
+}

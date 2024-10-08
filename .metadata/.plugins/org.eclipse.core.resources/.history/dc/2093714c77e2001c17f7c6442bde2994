@@ -1,0 +1,18 @@
+package Seleneium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Parmeters {
+	
+	WebDriver driver;
+	@Test
+	public void yahoologin()
+	{
+		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://https://login.yahoo.com/");
+	}
+
+}

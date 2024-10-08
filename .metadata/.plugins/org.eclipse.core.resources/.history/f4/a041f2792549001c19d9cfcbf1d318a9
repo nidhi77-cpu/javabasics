@@ -1,0 +1,17 @@
+package nidhihari;
+
+public class client {
+	
+	public static void main(String[] args)
+	{
+		
+		String op= "add";
+		
+		Sample s = new Sample();
+		
+		
+		
+	
+	}
+
+}

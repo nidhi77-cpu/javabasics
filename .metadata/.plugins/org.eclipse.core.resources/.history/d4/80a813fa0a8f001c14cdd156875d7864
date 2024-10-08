@@ -1,0 +1,29 @@
+package practical;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class pilot {
+	
+	 public static void main(String [] args) {
+		System.out.println(" helooooo");
+		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+	
+		driver.get("https://www.sakraworldhospital.com/request-appointment.php");
+		driver.manage().window().maximize();
+		
+	 //	 driver.findElement(By.xpath("//a[text()='Dr. Rani Premkumar']")).click();
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,250)");
+	 		
+		driver.findElement(By.linkText("Dr. Rani Premkumar")).click();
+		//div[@class='reser-hospital']/descendant::button[text()='Consultation']
+	//	driver.findElement(By.xpath("	//div[@class='reser-hospital']/descendant::button[text()='Consultation']")).click();
+	}
+}

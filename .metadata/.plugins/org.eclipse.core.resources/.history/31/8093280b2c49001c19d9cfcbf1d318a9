@@ -1,0 +1,25 @@
+package nidhihari;
+
+public class client {
+	
+	
+	int a;
+	static double s1;
+	boolean is;
+	
+	public static void test(int a)
+	{
+		a=10;
+		System.out.println(a);
+	}
+	
+	
+	public void main(String[] args)
+	{
+	  System.out.println(this.a);
+	  System.out.println(client.s1);
+	}
+	
+	
+	
+}

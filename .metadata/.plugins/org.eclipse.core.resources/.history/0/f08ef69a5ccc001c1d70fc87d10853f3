@@ -1,0 +1,15 @@
+package understandopps;
+
+public class Firstclass 
+
+
+{
+   public  void add() {
+int a=5;
+int b =3;
+int c=a+b;
+int res;
+ System.out.println(c);
+
+}
+}

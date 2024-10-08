@@ -1,0 +1,28 @@
+package PratcicalProjects;
+import java.util.*;
+public class OTP {
+	
+	  public static void main(String [] args)
+	  {
+		  int length;
+		  System.out.println(geek_Password(10));
+	  }
+	  static char[] geek_Password(int len)
+	  {
+		 System.out.println("starting with the codeeeeee");
+		 
+		 
+		 String captial = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		 String small = "abcdefghijklmnopqrstuvwxyz";
+		 String numbers = "0123456789";
+         String symbols = "!@#$%^&*_=+-/.?<>)";
+         
+         String values = captial+ small+ numbers+ symbols;
+         
+         
+		return;
+	  }
+
+	  
+	
+}

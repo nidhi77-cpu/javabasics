@@ -1,0 +1,20 @@
+package nidhihari;
+
+public class client {
+	
+	
+	public void test(int a)
+	{
+		a=10;
+		System.out.println(a);
+	}
+	
+	
+	public void main(String[] args)
+	{
+	   	test(5);
+	}
+	
+	
+	
+}

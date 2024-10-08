@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Testng seesion" >
+  <test name="Different testing features" >
+
+   <parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://login.yahoo.com/"></parameter>
+    <parameter name="username" value="test@gmail.com"></parameter>
+   
+    <classes>
+       <class name="Seleneium.Parmeters" />
+         
+    </classes>
+  </test>
+</suite>

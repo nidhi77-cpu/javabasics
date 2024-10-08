@@ -1,0 +1,12 @@
+package nidhihari;
+
+public class client {
+	
+	public void main(String[] args)
+	{
+		new application();
+	}
+	
+	
+	
+}

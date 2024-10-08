@@ -1,0 +1,47 @@
+package understandopps;
+
+public class InsideCodingStrings {
+
+	public static String right2(String str) {
+		
+	   
+	  
+//	    String var = str.substring(str.length()-2);
+//	    
+//	    
+//	return var+ str.substring(0, str.length()-2);
+//		
+//	StringBuffer s1= new StringBuffer(str);
+//	
+//	   s1.deleteCharAt(0);
+//	   s1.deleteCharAt(str.length()-2);
+//		
+	
+		
+		String s="";
+		
+		for(int i= 0 ; i<= str.length() ; i--)
+		{
+		
+		  return s = s +   str(i);
+		
+		}
+		return s;
+	
+	}
+	  
+	  
+	  
+	private static String str(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	public static void main (String [] args)
+	{
+		right2("Hello");
+	}
+	
+}
